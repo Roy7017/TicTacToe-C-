@@ -41,7 +41,7 @@ namespace TicTacToe
                 //...i did this because my calculations fo getting the 3x3 grid indices from the input number...
                 //...works with zero-based indexing
             }
-            while(!Board.CheckSquare(num/3, num%3)); //makes sure the input is valid
+            while(!Board.CheckSquare(num)); //makes sure the input is valid
             return num;
         }
 

@@ -30,8 +30,9 @@ namespace TicTacToe
             int moveNumber;
             do
             {
+                //START OF GAMEPLAY LOOP
                 //PLAYER ONE TURN
-                Board.Print();
+                Board.Render();
                 Console.WriteLine(player1.PlayerName + " Your turn\n");
                 moveNumber = player1.GetMove();  //registers player1's valid move...
                 player1.ChangeSquare(moveNumber);//...and implements it
@@ -41,7 +42,7 @@ namespace TicTacToe
                     break;
 
                 //PLAYER TWO TURN
-                Board.Print();
+                Board.Render();
                 Console.WriteLine(player2.PlayerName + " Your turn\n");
                 moveNumber = player2.GetMove();  //registers pllayer2's valid move...
                 player2.ChangeSquare(moveNumber);//...and implements it
@@ -52,7 +53,7 @@ namespace TicTacToe
 
             } while (true);
 
-            Board.Print();
+            Board.Render();
 
             //ENDGAME AND WIN ANNOUNCEMENTS
 
